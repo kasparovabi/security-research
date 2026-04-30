@@ -23,5 +23,5 @@ No proof-of-concept exploit code is published in this repository. Technical deta
 ## Contact
 
 - GitHub: [@kasparovabi](https://github.com/kasparovabi)
-- Email: ahmetkazankaya1@gmail.com
+- Email: kasparovabi@gmail.com
 - For security reports about my own code, please open a private GitHub Security Advisory on the relevant repository.
