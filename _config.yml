@@ -1,0 +1,11 @@
+title: Security Research
+description: Coordinated disclosures and security writeups by @kasparovabi
+theme: jekyll-theme-minimal
+markdown: kramdown
+plugins:
+  - jekyll-relative-links
+relative_links:
+  enabled: true
+  collections: false
+include:
+  - README.md
