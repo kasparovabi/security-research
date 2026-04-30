@@ -1,3 +1,11 @@
+---
+layout: default
+title: "Seventeen Vulnerabilities in Omi, Fourteen Days of Silence"
+description: "CVSS 10.0 advisory against BasedHardware/Omi backend (audio-recording AI wearable, claimed 300,000 users). Filed privately on 2026-04-15, ignored for 14 days, related public security PR closed without merging. RCE, auth bypass, hardcoded encryption key, SSRF, path traversal, OAuth CSRF. Coordinated disclosure timeline included."
+date: 2026-04-29
+image: /security-research/assets/og-omi.png
+---
+
 # Seventeen Vulnerabilities in Omi, Fourteen Days of Silence
 
 **Author:** Ahmet Kazankaya (`@kasparovabi` on GitHub)

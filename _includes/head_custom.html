@@ -1,0 +1,29 @@
+{%- assign page_title = page.title | default: site.title -%}
+{%- assign page_desc = page.description | default: site.description -%}
+{%- assign page_url = site.url | default: 'https://kasparovabi.github.io' | append: site.baseurl | append: page.url -%}
+{%- assign page_image = page.image | default: '/security-research/assets/og-default.png' -%}
+
+<meta name="description" content="{{ page_desc | escape }}">
+
+<!-- Open Graph (Facebook, LinkedIn, Reddit, Discord) -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="{{ page_title | escape }}">
+<meta property="og:description" content="{{ page_desc | escape }}">
+<meta property="og:url" content="{{ page_url }}">
+<meta property="og:image" content="https://kasparovabi.github.io{{ page_image }}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="{{ site.title | escape }}">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ page_title | escape }}">
+<meta name="twitter:description" content="{{ page_desc | escape }}">
+<meta name="twitter:image" content="https://kasparovabi.github.io{{ page_image }}">
+<meta name="twitter:creator" content="@kasparovabi">
+
+<!-- Article metadata -->
+{%- if page.date -%}
+<meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+{%- endif -%}
+<meta property="article:author" content="Ahmet Kazankaya">
