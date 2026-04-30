@@ -1,6 +1,6 @@
 title: Security Research
 description: Coordinated disclosures and security writeups by @kasparovabi
-theme: jekyll-theme-minimal
+theme: jekyll-theme-cayman
 markdown: kramdown
 plugins:
   - jekyll-relative-links

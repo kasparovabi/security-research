@@ -1,0 +1,35 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* Make wide tables scroll horizontally inside the content area */
+.main-content table {
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+  max-width: 100%;
+}
+
+.main-content table th,
+.main-content table td {
+  white-space: normal;
+  vertical-align: top;
+}
+
+/* Long inline code (encryption keys, file paths) wraps instead of breaking layout */
+.main-content code {
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+/* Pre code blocks scroll horizontally */
+.main-content pre {
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+/* Slightly wider content area for technical writeups */
+.main-content {
+  max-width: 78rem;
+}
