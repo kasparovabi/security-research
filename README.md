@@ -1,6 +1,6 @@
 # Security Research
 
-Coordinated disclosures and security writeups by Ahmet Kazankaya (`@kasparovabi`).
+Coordinated disclosures and security writeups by @kasparovabi
 
 ## Disclosures
 
