@@ -8,6 +8,12 @@ Coordinated disclosures and security writeups by @kasparovabi
 |---|---|---|---|---|
 | 2026-04-29 | BasedHardware / Omi | CVSS 10.0 (Critical) | [Seventeen Vulnerabilities in Omi, Fourteen Days of Silence](2026-04-omi-disclosure.md) | Mostly fixed as of 2026-08-10; OMI-15 open ([update](2026-04-omi-disclosure.md#update--august-10-2026-day-117)) |
 
+## Provenance
+
+For the Omi disclosure, a separate page documents the full timeline with checkable artifacts: who reported what, when, and what the vendor's own commit history says about where the fix came from. Every claim there can be reproduced with a `git log` command.
+
+- [Omi disclosure: provenance and timeline](omi-provenance.md)
+
 ## Methodology
 
 Each writeup in this repository is published after:
