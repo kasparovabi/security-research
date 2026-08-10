@@ -4,9 +4,9 @@ Coordinated disclosures and security writeups by @kasparovabi
 
 ## Disclosures
 
-| Date | Vendor / Product | Severity | Title |
-|---|---|---|---|
-| 2026-04-29 | BasedHardware / Omi | CVSS 10.0 (Critical) | [Seventeen Vulnerabilities in Omi, Fourteen Days of Silence](2026-04-omi-disclosure.md) |
+| Date | Vendor / Product | Severity | Title | Status |
+|---|---|---|---|---|
+| 2026-04-29 | BasedHardware / Omi | CVSS 10.0 (Critical) | [Seventeen Vulnerabilities in Omi, Fourteen Days of Silence](2026-04-omi-disclosure.md) | Mostly fixed as of 2026-08-10; OMI-15 open ([update](2026-04-omi-disclosure.md#update--august-10-2026-day-117)) |
 
 ## Methodology
 

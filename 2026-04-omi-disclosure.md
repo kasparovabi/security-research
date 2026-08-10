@@ -267,3 +267,65 @@ I have no commercial relationship with BasedHardware. I have never purchased an 
 ---
 
 *This is a coordinated-disclosure writeup, published on Day 14 after a private report to the vendor. It is not a call to exploit the issues. Readers running Omi infrastructure should treat this as a notification to assess their own exposure and, if applicable, their breach notification obligations.*
+
+---
+
+## Update — August 10, 2026 (Day 117)
+
+I re-checked every finding against `main` at `ea1fde5` rather than assuming the
+April write-up still held. Most of it no longer does, and the honest headline is
+that **BasedHardware fixed the majority of this advisory** — quietly, without
+comment, and without closing the advisory.
+
+### Fixed
+
+| ID | Finding | Status on `ea1fde5` |
+|---|---|---|
+| OMI-01 | RCE via `eval()` on cached Redis data | **Fixed.** The only `eval` calls left in `backend/` are `redis_client.eval(...)`, which execute server-side Lua, not attacker-controlled Python. |
+| OMI-03 | Hardcoded production encryption key in `.env.template` | **Fixed.** The template now ships `ENCRYPTION_SECRET=` empty. The long `omi_ZwB2...` literal that remains in the tree lives only under `backend/tests/`, set through `os.environ.setdefault` as a fixture. |
+| OMI-06 | Path traversal via unsanitised upload filename | **Fixed.** The `filename = file.filename` pattern is gone from `backend/routers/sync.py`. |
+| OMI-02 / OMI-04 | `ADMIN_KEY` prefix-match authentication bypass | **Hardened, deliberately.** `verify_token` now compares with `hmac.compare_digest` instead of `startswith`, closing the timing side channel; every successful impersonation is logged instead of being silent; `ADMIN_KEY_AUTH_ENABLED` lets an operator switch the path off; and the `LOCAL_DEVELOPMENT` fallback is gated on no real Firebase credential being present, so it is inert in any real deployment. |
+
+That last one deserves particular credit. The maintainers did not simply delete
+the concatenation format — they documented *why* they kept it (first-party test
+tooling depends on it) and closed the actual weaknesses around it. That is a more
+considered fix than the patch I offered in April.
+
+### Still open
+
+**OMI-15** — the hardcoded admin bypass token added to the new admin panel during
+the disclosure window is still there. `web/admin/lib/dev-auth.ts` exports
+`DEV_BYPASS_TOKEN`, and `web/admin/lib/auth.ts:16` still accepts
+`Bearer <that literal>` as a valid admin credential.
+
+**I overstated this one in April and want to correct it.** The gate is
+`NODE_ENV !== "production"` **and** an explicit opt-in environment variable. A
+correctly configured production deployment is not exposed. The residual risk is
+configuration-shaped, not code-shaped: the literal is public in this repository,
+one of the two flags is `NEXT_PUBLIC_`-prefixed and therefore client-visible by
+design, and staging and preview environments frequently do not set
+`NODE_ENV=production`. A random per-process token would remove the class of
+mistake at no cost to the developer workflow.
+
+### Process outcome
+
+The advisory itself is still in `triage` after four months. No comment, no CVE,
+no publication. The code was fixed; the disclosure was never acknowledged.
+
+This is worth naming plainly, because it cuts both ways. My April post argued the
+team was ignoring the findings. On the evidence of the current tree, that was
+wrong — they acted on most of it. What they did not do is close the loop with the
+reporter, which is the part of coordinated disclosure that makes the next
+researcher willing to come to you privately instead of going straight to a blog.
+
+I have posted this same summary as a comment on the advisory and offered to have
+it closed as fixed, or rescoped to OMI-15 at a lower severity. I am not chasing a
+CVE here.
+
+### Correction log
+
+- April post: implied the `DEV_BYPASS_TOKEN` path was reachable in production.
+  It is not, on the current tree — two independent gates must both be open.
+- April post: listed the aggregate as CVSS 10.0 (GitHub's own rating at filing
+  time). That number no longer reflects `main` and should not be cited as the
+  present state of the codebase.
