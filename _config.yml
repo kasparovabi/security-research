@@ -1,5 +1,5 @@
 title: Security Research
-description: Coordinated disclosures and security writeups by @kasparovabi
+description: Vulnerability reports to open source projects and the fixes that came out of them
 theme: jekyll-theme-cayman
 markdown: kramdown
 plugins:

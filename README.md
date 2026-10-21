@@ -1,6 +1,10 @@
 # Security Research
 
-Coordinated disclosures and security writeups by @kasparovabi
+Vulnerability reports I have made to open source projects, and the fixes that came out of them.
+
+Reports go to the maintainers privately first, through GitHub private vulnerability reporting or the channel named in the project's SECURITY.md. An advisory is listed here only after the maintainers have published it. Recent reports also came with a proposed patch in the advisory's temporary private fork.
+
+Contact: kasparovabi@gmail.com
 
 ## Disclosures
 
