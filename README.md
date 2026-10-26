@@ -10,6 +10,7 @@ Contact: kasparovabi@gmail.com
 
 | Date | Vendor / Product | Severity | Title | Status |
 |---|---|---|---|---|
+| 2026-10-26 | clidey / WhoDB | CVSS 3.1 Medium | [SELECT ... INTO passed the read-only and write-approval gates](2026-09-whodb-select-into.md) | Fixed in 0.134.0 ([GHSA-pvf2-6h4x-r24j](https://github.com/clidey/whodb/security/advisories/GHSA-pvf2-6h4x-r24j)) |
 | 2026-04-29 | BasedHardware / Omi | CVSS 10.0 (Critical) | [Seventeen Vulnerabilities in Omi, Fourteen Days of Silence](2026-04-omi-disclosure.md) | Mostly fixed as of 2026-08-10; OMI-15 open ([update](2026-04-omi-disclosure.md#update--august-10-2026-day-117)) |
 
 <!-- ADVISORIES:BASLA -->
