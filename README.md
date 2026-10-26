@@ -10,6 +10,11 @@ Contact: kasparovabi@gmail.com
 
 | Date | Vendor / Product | Severity | Title | Status |
 |---|---|---|---|---|
+| 2026-10-27 | GuyMannDude / mnemo-cortex | CVSS 3.1 High | [A wildcard CORS default opened the unauthenticated loopback API to web pages](2026-10-mnemo-cortex-cors-loopback.md) | Fixed in 4.27.0 ([GHSA-682p-grrx-wrwg](https://github.com/GuyMannDude/mnemo-cortex/security/advisories/GHSA-682p-grrx-wrwg)) |
+| 2026-10-27 | devantler-tech / KSail | CVSS 3.1 Medium | [The local web UI checked Host only on writes, so a rebinding page could read cluster Secrets](2026-10-ksail-webui-dns-rebinding.md) | Fixed in 7.203.23 ([GHSA-g57x-rm7r-hf26](https://github.com/devantler-tech/ksail/security/advisories/GHSA-g57x-rm7r-hf26)) |
+| 2026-10-27 | embedded-society / altium-designer-mcp | CVSS 3.1 Medium | [Count fields from a library file sized allocations, and a failed allocation aborts the server](2026-10-altium-designer-mcp-unbounded-allocation.md) | Fixed in 1.2.1 ([GHSA-p2qw-h8m7-5x69](https://github.com/embedded-society/altium-designer-mcp/security/advisories/GHSA-p2qw-h8m7-5x69)) |
+| 2026-10-27 | SylphxAI / anymd (pdf-reader-mcp) | Medium | [The documented --allow-dir restriction was not implemented in the Rust server](2026-09-anymd-allow-dir-not-implemented.md) | Fixed in @sylphx/citra 5.0.2 ([GHSA-qr3f-g5wf-225w](https://github.com/SylphxAI/anymd/security/advisories/GHSA-qr3f-g5wf-225w)) |
+| 2026-10-27 | Kronova Intelligent Systems / asset-intel-orchestration-engine | CVSS 3.1 High | [An RLS policy with USING (true) let the anon role read every profile](2026-09-kronova-profiles-rls.md) | No patched version listed ([GHSA-8h52-3cfj-cmrw](https://github.com/Kronova-Intelligent-Systems/asset-intel-orchestration-engine/security/advisories/GHSA-8h52-3cfj-cmrw)) |
 | 2026-10-26 | clidey / WhoDB | CVSS 3.1 Medium | [SELECT ... INTO passed the read-only and write-approval gates](2026-09-whodb-select-into.md) | Fixed in 0.134.0 ([GHSA-pvf2-6h4x-r24j](https://github.com/clidey/whodb/security/advisories/GHSA-pvf2-6h4x-r24j)) |
 | 2026-04-29 | BasedHardware / Omi | CVSS 10.0 (Critical) | [Seventeen Vulnerabilities in Omi, Fourteen Days of Silence](2026-04-omi-disclosure.md) | Mostly fixed as of 2026-08-10; OMI-15 open ([update](2026-04-omi-disclosure.md#update--august-10-2026-day-117)) |
 
