@@ -32,7 +32,7 @@ Advisories published by the maintainers, with reporter credit accepted. Reports 
 | 2026-09-20 | [SylphxAI/anymd](https://github.com/SylphxAI/anymd) | Medium | Documented --allow-dir / MCP_PDF_ALLOWED_DIRS filesystem allowlist is not implemented in the pure-Rust server | [GHSA-qr3f-g5wf-225w](https://github.com/SylphxAI/anymd/security/advisories/GHSA-qr3f-g5wf-225w) |  |
 | 2026-09-17 | [Kronova-Intelligent-Systems/asset-intel-orchestration-engine](https://github.com/Kronova-Intelligent-Systems/asset-intel-orchestration-engine) | High | RLS policy on public.profiles grants the anon role unrestricted read, exposing user email | [GHSA-8h52-3cfj-cmrw](https://github.com/Kronova-Intelligent-Systems/asset-intel-orchestration-engine/security/advisories/GHSA-8h52-3cfj-cmrw) |  |
 
-Last synced: 2026-10-22
+Last synced: 2026-10-27
 <!-- ADVISORIES:BITIR -->
 
 <!-- MERGED:BASLA -->
@@ -42,6 +42,7 @@ Pull requests merged by the maintainers of the projects below.
 
 | Merged | Repository | Change |
 |---|---|---|
+| 2026-10-26 | [NaomiProject/Naomi](https://github.com/NaomiProject/Naomi) | [Use shlex.quote instead of the removed pipes module in TTS plugins](https://github.com/NaomiProject/Naomi/pull/447) |
 | 2026-10-21 | [botbahlul/PyAutoSRT](https://github.com/botbahlul/PyAutoSRT) | [Add audioop-lts for Python 3.13 and newer](https://github.com/botbahlul/PyAutoSRT/pull/14) |
 | 2026-10-14 | [jpfielding/dicos.rs](https://github.com/jpfielding/dicos.rs) | [Replace retired model id in rust-expert agent frontmatter](https://github.com/jpfielding/dicos.rs/pull/18) |
 | 2026-10-13 | [kwaroran/Risuai](https://github.com/kwaroran/Risuai) | [Resolve prefillsupported from the model flag for native Claude entries](https://github.com/kwaroran/Risuai/pull/1612) |
