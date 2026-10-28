@@ -78,6 +78,10 @@ Pull requests merged by the maintainers of the projects below.
 | 2026-08-02 | [rmyndharis/antigravity-skills](https://github.com/rmyndharis/antigravity-skills) | [Replace retired Claude model id in the two AI review skills](https://github.com/rmyndharis/antigravity-skills/pull/10) |
 <!-- MERGED:BITIR -->
 
+## Detection rules
+
+Detection rules derived from these advisories are in [kasparovabi/semgrep-rules](https://github.com/kasparovabi/semgrep-rules). Each bug class has Semgrep rules, positive and negative test cases, and a short guide on how to protect your own code.
+
 ## Provenance
 
 For the Omi disclosure, a separate page documents the full timeline with checkable artifacts: who reported what, when, and what the vendor's own commit history says about where the fix came from. Every claim there can be reproduced with a `git log` command.
