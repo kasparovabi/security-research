@@ -10,7 +10,7 @@ image: /assets/og-omi.png
 
 **Author:** Ahmet Kazankaya (`@kasparovabi` on GitHub)
 **Date published:** April 29, 2026 (Day 14)
-**GHSA:** [GHSA-4j2c-fmg6-8h42](https://github.com/BasedHardware/omi/security/advisories/GHSA-4j2c-fmg6-8h42) (filed April 15, 2026)
+**GHSA:** [GHSA-4j2c-fmg6-8h42](https://github.com/BasedHardware/omi/security/advisories/GHSA-4j2c-fmg6-8h42) (filed April 15, 2026, still in private triage as of November 2, 2026, so the link only opens for the maintainers and the reporter)
 **CVSS:** 10.0 (Critical)
 
 ---

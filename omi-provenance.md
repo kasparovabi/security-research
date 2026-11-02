@@ -21,7 +21,7 @@ and still has no CVE.
 
 | What | Artifact | How to check it |
 |---|---|---|
-| Private report filed | [GHSA-4j2c-fmg6-8h42](https://github.com/BasedHardware/omi/security/advisories/GHSA-4j2c-fmg6-8h42) | Advisory page shows `kasparovabi` credited as reporter, credit state `accepted` |
+| Private report filed | [GHSA-4j2c-fmg6-8h42](https://github.com/BasedHardware/omi/security/advisories/GHSA-4j2c-fmg6-8h42) | Advisory page shows `kasparovabi` credited as reporter, credit state `accepted`. The advisory is still private, so the link returns 404 for everyone else |
 | Report date | April 15, 2026 | Advisory creation date, visible to anyone with access to the advisory |
 | Public writeup | [2026-04-omi-disclosure.md](2026-04-omi-disclosure.md) | First commit in this repository, `1585c37`, timestamped `2026-04-30T00:03:41+03:00` |
 | The fix | Commit [`87b20078`](https://github.com/BasedHardware/omi/commit/87b2007891ab249425e96a31a81bf0e8398a0a8b) | Title: *"Harden auth, SSRF, CSRF, and BYOK boundaries from the April disclosure"*. Author: `amowpheth`. Date: 2026-07-27 |
