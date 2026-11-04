@@ -27,20 +27,21 @@ Contact: kasparovabi@gmail.com
 
 Advisories published by the maintainers, with reporter credit accepted. Reports still in private triage are not listed here.
 
-| Published | Repository | Severity | Summary | Advisory | CVE |
-|---|---|---|---|---|---|
-| 2026-10-29 | [yvgude/lean-ctx](https://github.com/yvgude/lean-ctx) | High | Project-local provider configs bypass workspace trust and send environment secrets to a repository-chosen URL | [GHSA-rrww-7924-w72f](https://github.com/yvgude/lean-ctx/security/advisories/GHSA-rrww-7924-w72f) |  |
-| 2026-10-29 | [yvgude/lean-ctx](https://github.com/yvgude/lean-ctx) | Low | Untrusted project .lean-ctx.toml can still extend write_allow_paths, widening ctx_shell write targets | [GHSA-79fg-7cj5-4xmm](https://github.com/yvgude/lean-ctx/security/advisories/GHSA-79fg-7cj5-4xmm) |  |
-| 2026-10-29 | [yvgude/lean-ctx](https://github.com/yvgude/lean-ctx) | Medium | ctx_proof filename is not confined, allowing file creation and overwrite outside the path jail | [GHSA-pv78-9chr-hj3c](https://github.com/yvgude/lean-ctx/security/advisories/GHSA-pv78-9chr-hj3c) |  |
-| 2026-10-29 | [yvgude/lean-ctx](https://github.com/yvgude/lean-ctx) | Medium | Proxy accepts any provider key header on gateway-credential routes, letting local users use the operator's upstream credential without the lean-ctx token | [GHSA-53h5-q4m8-vg3x](https://github.com/yvgude/lean-ctx/security/advisories/GHSA-53h5-q4m8-vg3x) |  |
-| 2026-10-19 | [GuyMannDude/mnemo-cortex](https://github.com/GuyMannDude/mnemo-cortex) | High | Default CORS allow_origins wildcard on unauthenticated loopback server allows cross-origin data exfiltration and state mutation | [GHSA-682p-grrx-wrwg](https://github.com/GuyMannDude/mnemo-cortex/security/advisories/GHSA-682p-grrx-wrwg) |  |
-| 2026-10-17 | [devantler-tech/ksail](https://github.com/devantler-tech/ksail) | Medium | Local web UI accepts read requests from any Host, letting a DNS rebinding page read cluster Secrets | [GHSA-g57x-rm7r-hf26](https://github.com/devantler-tech/ksail/security/advisories/GHSA-g57x-rm7r-hf26) |  |
-| 2026-10-09 | [embedded-society/altium-designer-mcp](https://github.com/embedded-society/altium-designer-mcp) | Medium | Unbounded allocation from attacker-controlled count fields in the Altium library parsers aborts the MCP server (DoS) | [GHSA-p2qw-h8m7-5x69](https://github.com/embedded-society/altium-designer-mcp/security/advisories/GHSA-p2qw-h8m7-5x69) |  |
-| 2026-09-30 | [clidey/whodb](https://github.com/clidey/whodb) | Medium | Read-only mode and the write-approval gate are bypassed by SELECT ... INTO | [GHSA-pvf2-6h4x-r24j](https://github.com/clidey/whodb/security/advisories/GHSA-pvf2-6h4x-r24j) |  |
-| 2026-09-20 | [SylphxAI/anymd](https://github.com/SylphxAI/anymd) | Medium | Documented --allow-dir / MCP_PDF_ALLOWED_DIRS filesystem allowlist is not implemented in the pure-Rust server | [GHSA-qr3f-g5wf-225w](https://github.com/SylphxAI/anymd/security/advisories/GHSA-qr3f-g5wf-225w) |  |
-| 2026-09-17 | [Kronova-Intelligent-Systems/asset-intel-orchestration-engine](https://github.com/Kronova-Intelligent-Systems/asset-intel-orchestration-engine) | High | RLS policy on public.profiles grants the anon role unrestricted read, exposing user email | [GHSA-8h52-3cfj-cmrw](https://github.com/Kronova-Intelligent-Systems/asset-intel-orchestration-engine/security/advisories/GHSA-8h52-3cfj-cmrw) |  |
+| Published | Repository | Severity | Summary | Advisory |
+|---|---|---|---|---|
+| 2026-10-29 | [yvgude/lean-ctx](https://github.com/yvgude/lean-ctx) | Medium | Proxy accepts any provider key header on | [GHSA-53h5-q4m8-vg3x](https://github.com/yvgude/lean-ctx/security/advisories/GHSA-53h5-q4m8-vg3x) |
+| 2026-10-29 | [yvgude/lean-ctx](https://github.com/yvgude/lean-ctx) | Medium | ctx_proof filename is not confined, allowing file | [GHSA-pv78-9chr-hj3c](https://github.com/yvgude/lean-ctx/security/advisories/GHSA-pv78-9chr-hj3c) |
+| 2026-10-29 | [yvgude/lean-ctx](https://github.com/yvgude/lean-ctx) | Low | Untrusted project .lean-ctx.toml can still extend | [GHSA-79fg-7cj5-4xmm](https://github.com/yvgude/lean-ctx/security/advisories/GHSA-79fg-7cj5-4xmm) |
+| 2026-10-29 | [yvgude/lean-ctx](https://github.com/yvgude/lean-ctx) | High | Project-local provider configs bypass workspace trust | [GHSA-rrww-7924-w72f](https://github.com/yvgude/lean-ctx/security/advisories/GHSA-rrww-7924-w72f) |
+| 2026-10-19 | [GuyMannDude/mnemo-cortex](https://github.com/GuyMannDude/mnemo-cortex) | High | CORS wildcard on an unauthenticated local server | [GHSA-682p-grrx-wrwg](https://github.com/GuyMannDude/mnemo-cortex/security/advisories/GHSA-682p-grrx-wrwg) |
+| 2026-10-17 | [devantler-tech/ksail](https://github.com/devantler-tech/ksail) | Medium | Local web UI accepts read requests from any Host, | [GHSA-g57x-rm7r-hf26](https://github.com/devantler-tech/ksail/security/advisories/GHSA-g57x-rm7r-hf26) |
+| 2026-10-09 | [embedded-society/altium-designer-mcp](https://github.com/embedded-society/altium-designer-mcp) | Medium | Unbounded allocation from file count fields crashes the server | [GHSA-p2qw-h8m7-5x69](https://github.com/embedded-society/altium-designer-mcp/security/advisories/GHSA-p2qw-h8m7-5x69) |
+| 2026-09-30 | [clidey/whodb](https://github.com/clidey/whodb) | Medium | Read only mode bypassed by SELECT INTO | [GHSA-pvf2-6h4x-r24j](https://github.com/clidey/whodb/security/advisories/GHSA-pvf2-6h4x-r24j) |
+| 2026-09-20 | [SylphxAI/anymd](https://github.com/SylphxAI/anymd) | Medium | Documented filesystem allowlist not implemented | [GHSA-qr3f-g5wf-225w](https://github.com/SylphxAI/anymd/security/advisories/GHSA-qr3f-g5wf-225w) |
+| 2026-09-20 | [SylphxAI/pdf-reader-mcp](https://github.com/SylphxAI/pdf-reader-mcp) | Medium | Documented filesystem allowlist not implemented | [GHSA-qr3f-g5wf-225w](https://github.com/SylphxAI/pdf-reader-mcp/security/advisories/GHSA-qr3f-g5wf-225w) |
+| 2026-09-17 | [Kronova-Intelligent-Systems/asset-intel-orchestration-engine](https://github.com/Kronova-Intelligent-Systems/asset-intel-orchestration-engine) | High | RLS policy exposed user email to the anon role | [GHSA-8h52-3cfj-cmrw](https://github.com/Kronova-Intelligent-Systems/asset-intel-orchestration-engine/security/advisories/GHSA-8h52-3cfj-cmrw) |
 
-Last synced: 2026-11-01
+Last synced: 2026-11-04
 <!-- ADVISORIES:BITIR -->
 
 <!-- MERGED:BASLA -->
