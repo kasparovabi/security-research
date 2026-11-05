@@ -27,21 +27,24 @@ Contact: kasparovabi@gmail.com
 
 Advisories published by the maintainers, with reporter credit accepted. Reports still in private triage are not listed here.
 
-| Published | Repository | Severity | Summary | Advisory |
-|---|---|---|---|---|
-| 2026-10-29 | [yvgude/lean-ctx](https://github.com/yvgude/lean-ctx) | Medium | Proxy accepts any provider key header on | [GHSA-53h5-q4m8-vg3x](https://github.com/yvgude/lean-ctx/security/advisories/GHSA-53h5-q4m8-vg3x) |
-| 2026-10-29 | [yvgude/lean-ctx](https://github.com/yvgude/lean-ctx) | Medium | ctx_proof filename is not confined, allowing file | [GHSA-pv78-9chr-hj3c](https://github.com/yvgude/lean-ctx/security/advisories/GHSA-pv78-9chr-hj3c) |
-| 2026-10-29 | [yvgude/lean-ctx](https://github.com/yvgude/lean-ctx) | Low | Untrusted project .lean-ctx.toml can still extend | [GHSA-79fg-7cj5-4xmm](https://github.com/yvgude/lean-ctx/security/advisories/GHSA-79fg-7cj5-4xmm) |
-| 2026-10-29 | [yvgude/lean-ctx](https://github.com/yvgude/lean-ctx) | High | Project-local provider configs bypass workspace trust | [GHSA-rrww-7924-w72f](https://github.com/yvgude/lean-ctx/security/advisories/GHSA-rrww-7924-w72f) |
-| 2026-10-19 | [GuyMannDude/mnemo-cortex](https://github.com/GuyMannDude/mnemo-cortex) | High | CORS wildcard on an unauthenticated local server | [GHSA-682p-grrx-wrwg](https://github.com/GuyMannDude/mnemo-cortex/security/advisories/GHSA-682p-grrx-wrwg) |
-| 2026-10-17 | [devantler-tech/ksail](https://github.com/devantler-tech/ksail) | Medium | Local web UI accepts read requests from any Host, | [GHSA-g57x-rm7r-hf26](https://github.com/devantler-tech/ksail/security/advisories/GHSA-g57x-rm7r-hf26) |
-| 2026-10-09 | [embedded-society/altium-designer-mcp](https://github.com/embedded-society/altium-designer-mcp) | Medium | Unbounded allocation from file count fields crashes the server | [GHSA-p2qw-h8m7-5x69](https://github.com/embedded-society/altium-designer-mcp/security/advisories/GHSA-p2qw-h8m7-5x69) |
-| 2026-09-30 | [clidey/whodb](https://github.com/clidey/whodb) | Medium | Read only mode bypassed by SELECT INTO | [GHSA-pvf2-6h4x-r24j](https://github.com/clidey/whodb/security/advisories/GHSA-pvf2-6h4x-r24j) |
-| 2026-09-20 | [SylphxAI/anymd](https://github.com/SylphxAI/anymd) | Medium | Documented filesystem allowlist not implemented | [GHSA-qr3f-g5wf-225w](https://github.com/SylphxAI/anymd/security/advisories/GHSA-qr3f-g5wf-225w) |
-| 2026-09-20 | [SylphxAI/pdf-reader-mcp](https://github.com/SylphxAI/pdf-reader-mcp) | Medium | Documented filesystem allowlist not implemented | [GHSA-qr3f-g5wf-225w](https://github.com/SylphxAI/pdf-reader-mcp/security/advisories/GHSA-qr3f-g5wf-225w) |
-| 2026-09-17 | [Kronova-Intelligent-Systems/asset-intel-orchestration-engine](https://github.com/Kronova-Intelligent-Systems/asset-intel-orchestration-engine) | High | RLS policy exposed user email to the anon role | [GHSA-8h52-3cfj-cmrw](https://github.com/Kronova-Intelligent-Systems/asset-intel-orchestration-engine/security/advisories/GHSA-8h52-3cfj-cmrw) |
+| Published | Repository | Severity | Summary | Advisory | CVE |
+|---|---|---|---|---|---|
+| 2026-11-05 | [AmrDab/clawdcursor](https://github.com/AmrDab/clawdcursor) | Medium | SafetyLayer keyboard gate is bypassed by the agent loop's own tool name, and by whitespace in a sequence | [GHSA-35pc-g74h-p476](https://github.com/AmrDab/clawdcursor/security/advisories/GHSA-35pc-g74h-p476) |  |
+| 2026-11-05 | [pbatard/rufus](https://github.com/pbatard/rufus) | Medium | Heap buffer overflow in UpdateMD5Sum() from a short md5sum.txt line in an ISO | [GHSA-877g-r8h5-fq8p](https://github.com/pbatard/rufus/security/advisories/GHSA-877g-r8h5-fq8p) |  |
+| 2026-11-05 | [pbatard/rufus](https://github.com/pbatard/rufus) | Medium | Heap buffer overflow in GetSbatEntries() when the downloaded sbat_level.txt uses CR line endings | [GHSA-hcpc-vq8c-923h](https://github.com/pbatard/rufus/security/advisories/GHSA-hcpc-vq8c-923h) |  |
+| 2026-11-05 | [yvgude/lean-ctx](https://github.com/yvgude/lean-ctx) | Medium | ctx_package save and ctx_pack export write outside the project jail in the default configuration | [GHSA-483j-9vcj-2gxx](https://github.com/yvgude/lean-ctx/security/advisories/GHSA-483j-9vcj-2gxx) |  |
+| 2026-10-29 | [yvgude/lean-ctx](https://github.com/yvgude/lean-ctx) | High | Project-local provider configs bypass workspace trust and send environment secrets to a repository-chosen URL | [GHSA-rrww-7924-w72f](https://github.com/yvgude/lean-ctx/security/advisories/GHSA-rrww-7924-w72f) |  |
+| 2026-10-29 | [yvgude/lean-ctx](https://github.com/yvgude/lean-ctx) | Low | Untrusted project .lean-ctx.toml can still extend write_allow_paths, widening ctx_shell write targets | [GHSA-79fg-7cj5-4xmm](https://github.com/yvgude/lean-ctx/security/advisories/GHSA-79fg-7cj5-4xmm) |  |
+| 2026-10-29 | [yvgude/lean-ctx](https://github.com/yvgude/lean-ctx) | Medium | ctx_proof filename is not confined, allowing file creation and overwrite outside the path jail | [GHSA-pv78-9chr-hj3c](https://github.com/yvgude/lean-ctx/security/advisories/GHSA-pv78-9chr-hj3c) |  |
+| 2026-10-29 | [yvgude/lean-ctx](https://github.com/yvgude/lean-ctx) | Medium | Proxy accepts any provider key header on gateway-credential routes, letting local users use the operator's upstream credential without the lean-ctx token | [GHSA-53h5-q4m8-vg3x](https://github.com/yvgude/lean-ctx/security/advisories/GHSA-53h5-q4m8-vg3x) |  |
+| 2026-10-19 | [GuyMannDude/mnemo-cortex](https://github.com/GuyMannDude/mnemo-cortex) | High | Default CORS allow_origins wildcard on unauthenticated loopback server allows cross-origin data exfiltration and state mutation | [GHSA-682p-grrx-wrwg](https://github.com/GuyMannDude/mnemo-cortex/security/advisories/GHSA-682p-grrx-wrwg) |  |
+| 2026-10-17 | [devantler-tech/ksail](https://github.com/devantler-tech/ksail) | Medium | Local web UI accepts read requests from any Host, letting a DNS rebinding page read cluster Secrets | [GHSA-g57x-rm7r-hf26](https://github.com/devantler-tech/ksail/security/advisories/GHSA-g57x-rm7r-hf26) |  |
+| 2026-10-09 | [embedded-society/altium-designer-mcp](https://github.com/embedded-society/altium-designer-mcp) | Medium | Unbounded allocation from attacker-controlled count fields in the Altium library parsers aborts the MCP server (DoS) | [GHSA-p2qw-h8m7-5x69](https://github.com/embedded-society/altium-designer-mcp/security/advisories/GHSA-p2qw-h8m7-5x69) |  |
+| 2026-09-30 | [clidey/whodb](https://github.com/clidey/whodb) | Medium | Read-only mode and the write-approval gate are bypassed by SELECT ... INTO | [GHSA-pvf2-6h4x-r24j](https://github.com/clidey/whodb/security/advisories/GHSA-pvf2-6h4x-r24j) |  |
+| 2026-09-20 | [SylphxAI/anymd](https://github.com/SylphxAI/anymd) | Medium | Documented --allow-dir / MCP_PDF_ALLOWED_DIRS filesystem allowlist is not implemented in the pure-Rust server | [GHSA-qr3f-g5wf-225w](https://github.com/SylphxAI/anymd/security/advisories/GHSA-qr3f-g5wf-225w) |  |
+| 2026-09-17 | [Kronova-Intelligent-Systems/asset-intel-orchestration-engine](https://github.com/Kronova-Intelligent-Systems/asset-intel-orchestration-engine) | High | RLS policy on public.profiles grants the anon role unrestricted read, exposing user email | [GHSA-8h52-3cfj-cmrw](https://github.com/Kronova-Intelligent-Systems/asset-intel-orchestration-engine/security/advisories/GHSA-8h52-3cfj-cmrw) |  |
 
-Last synced: 2026-11-04
+Last synced: 2026-11-05
 <!-- ADVISORIES:BITIR -->
 
 <!-- MERGED:BASLA -->
@@ -51,6 +54,7 @@ Pull requests merged by the maintainers of the projects below.
 
 | Merged | Repository | Change |
 |---|---|---|
+| 2026-11-04 | [YuvrajSingh-mist/Paper-Replications-and-Experiments](https://github.com/YuvrajSingh-mist/Paper-Replications-and-Experiments) | [Drop unused uu import from dpo_train.py (removed in Python 3.13)](https://github.com/YuvrajSingh-mist/Paper-Replications-and-Experiments/pull/3) |
 | 2026-10-31 | [composer-unused/composer-unused](https://github.com/composer-unused/composer-unused) | [chore(ci): build the phar without dev dependencies](https://github.com/composer-unused/composer-unused/pull/751) |
 | 2026-10-26 | [NaomiProject/Naomi](https://github.com/NaomiProject/Naomi) | [Use shlex.quote instead of the removed pipes module in TTS plugins](https://github.com/NaomiProject/Naomi/pull/447) |
 | 2026-10-21 | [botbahlul/PyAutoSRT](https://github.com/botbahlul/PyAutoSRT) | [Add audioop-lts for Python 3.13 and newer](https://github.com/botbahlul/PyAutoSRT/pull/14) |
