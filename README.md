@@ -10,6 +10,7 @@ Contact: kasparovabi@gmail.com
 
 | Date | Vendor / Product | Severity | Title | Status |
 |---|---|---|---|---|
+| 2026-11-09 | pbatard / Rufus | CVSS 3.1 Medium | [Two heap writes from line handling, in md5sum.txt from an ISO and in the downloaded sbat_level.txt](2026-11-rufus-md5sum-and-sbat-heap-writes.md) | Fixed for 4.16 ([GHSA-877g-r8h5-fq8p](https://github.com/pbatard/rufus/security/advisories/GHSA-877g-r8h5-fq8p), [GHSA-hcpc-vq8c-923h](https://github.com/pbatard/rufus/security/advisories/GHSA-hcpc-vq8c-923h)) |
 | 2026-10-31 | yvgude / lean-ctx | CVSS 3.1 High | [Project-local provider configs skipped Workspace Trust and could send environment secrets to a repository-chosen URL](2026-10-lean-ctx-project-providers-trust.md) | Fixed in 3.12.0 ([GHSA-rrww-7924-w72f](https://github.com/yvgude/lean-ctx/security/advisories/GHSA-rrww-7924-w72f)) |
 | 2026-10-31 | yvgude / lean-ctx | CVSS 3.1 Medium | [The proxy accepted any provider key header on routes where it holds the upstream credential](2026-10-lean-ctx-proxy-gateway-key.md) | Fixed in 3.12.0 ([GHSA-53h5-q4m8-vg3x](https://github.com/yvgude/lean-ctx/security/advisories/GHSA-53h5-q4m8-vg3x)) |
 | 2026-10-31 | yvgude / lean-ctx | CVSS 3.1 Medium | [The ctx_proof filename was not confined, so exports could be written outside the path jail](2026-10-lean-ctx-proof-path-jail.md) | Fixed in 3.12.0 ([GHSA-pv78-9chr-hj3c](https://github.com/yvgude/lean-ctx/security/advisories/GHSA-pv78-9chr-hj3c)) |
