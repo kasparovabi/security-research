@@ -30,6 +30,7 @@ Advisories published by the maintainers, with reporter credit accepted. Reports 
 
 | Published | Repository | Severity | Summary | Advisory | CVE |
 |---|---|---|---|---|---|
+| 2026-11-10 | [AvaloniaUI/Avalonia](https://github.com/AvaloniaUI/Avalonia) | Low | Out-of-bounds read of process memory when reading a CF_DIB bitmap from the clipboard or a drop on Windows | [GHSA-x3fw-83fm-ggpp](https://github.com/AvaloniaUI/Avalonia/security/advisories/GHSA-x3fw-83fm-ggpp) |  |
 | 2026-11-05 | [AmrDab/clawdcursor](https://github.com/AmrDab/clawdcursor) | Medium | SafetyLayer keyboard gate is bypassed by the agent loop's own tool name, and by whitespace in a sequence | [GHSA-35pc-g74h-p476](https://github.com/AmrDab/clawdcursor/security/advisories/GHSA-35pc-g74h-p476) |  |
 | 2026-11-05 | [pbatard/rufus](https://github.com/pbatard/rufus) | Medium | Heap buffer overflow in UpdateMD5Sum() from a short md5sum.txt line in an ISO | [GHSA-877g-r8h5-fq8p](https://github.com/pbatard/rufus/security/advisories/GHSA-877g-r8h5-fq8p) |  |
 | 2026-11-05 | [pbatard/rufus](https://github.com/pbatard/rufus) | Medium | Heap buffer overflow in GetSbatEntries() when the downloaded sbat_level.txt uses CR line endings | [GHSA-hcpc-vq8c-923h](https://github.com/pbatard/rufus/security/advisories/GHSA-hcpc-vq8c-923h) |  |
@@ -45,7 +46,7 @@ Advisories published by the maintainers, with reporter credit accepted. Reports 
 | 2026-09-20 | [SylphxAI/anymd](https://github.com/SylphxAI/anymd) | Medium | Documented --allow-dir / MCP_PDF_ALLOWED_DIRS filesystem allowlist is not implemented in the pure-Rust server | [GHSA-qr3f-g5wf-225w](https://github.com/SylphxAI/anymd/security/advisories/GHSA-qr3f-g5wf-225w) |  |
 | 2026-09-17 | [Kronova-Intelligent-Systems/asset-intel-orchestration-engine](https://github.com/Kronova-Intelligent-Systems/asset-intel-orchestration-engine) | High | RLS policy on public.profiles grants the anon role unrestricted read, exposing user email | [GHSA-8h52-3cfj-cmrw](https://github.com/Kronova-Intelligent-Systems/asset-intel-orchestration-engine/security/advisories/GHSA-8h52-3cfj-cmrw) |  |
 
-Last synced: 2026-11-10
+Last synced: 2026-11-11
 <!-- ADVISORIES:BITIR -->
 
 <!-- MERGED:BASLA -->
