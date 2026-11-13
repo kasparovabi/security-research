@@ -30,6 +30,7 @@ Advisories published by the maintainers, with reporter credit accepted. Reports 
 
 | Published | Repository | Severity | Summary | Advisory | CVE |
 |---|---|---|---|---|---|
+| 2026-11-13 | [yvgude/lean-ctx](https://github.com/yvgude/lean-ctx) | High | ctx_compress_memory and ctx_pack bundle still follow a symlink in a cloned repository out of the project in 3.12.3 | [GHSA-mq5c-rjv9-2fc3](https://github.com/yvgude/lean-ctx/security/advisories/GHSA-mq5c-rjv9-2fc3) |  |
 | 2026-11-11 | [yvgude/lean-ctx](https://github.com/yvgude/lean-ctx) | High | Symlinks in a cloned repository still carry ctx_package, ctx_proof and OKF export writes out of the project in 3.12.2 | [GHSA-3w2f-2427-9258](https://github.com/yvgude/lean-ctx/security/advisories/GHSA-3w2f-2427-9258) |  |
 | 2026-11-10 | [AvaloniaUI/Avalonia](https://github.com/AvaloniaUI/Avalonia) | Low | Out-of-bounds read of process memory when reading a CF_DIB bitmap from the clipboard or a drop on Windows | [GHSA-x3fw-83fm-ggpp](https://github.com/AvaloniaUI/Avalonia/security/advisories/GHSA-x3fw-83fm-ggpp) |  |
 | 2026-11-05 | [AmrDab/clawdcursor](https://github.com/AmrDab/clawdcursor) | Medium | SafetyLayer keyboard gate is bypassed by the agent loop's own tool name, and by whitespace in a sequence | [GHSA-35pc-g74h-p476](https://github.com/AmrDab/clawdcursor/security/advisories/GHSA-35pc-g74h-p476) |  |
@@ -47,7 +48,7 @@ Advisories published by the maintainers, with reporter credit accepted. Reports 
 | 2026-09-20 | [SylphxAI/anymd](https://github.com/SylphxAI/anymd) | Medium | Documented --allow-dir / MCP_PDF_ALLOWED_DIRS filesystem allowlist is not implemented in the pure-Rust server | [GHSA-qr3f-g5wf-225w](https://github.com/SylphxAI/anymd/security/advisories/GHSA-qr3f-g5wf-225w) |  |
 | 2026-09-17 | [Kronova-Intelligent-Systems/asset-intel-orchestration-engine](https://github.com/Kronova-Intelligent-Systems/asset-intel-orchestration-engine) | High | RLS policy on public.profiles grants the anon role unrestricted read, exposing user email | [GHSA-8h52-3cfj-cmrw](https://github.com/Kronova-Intelligent-Systems/asset-intel-orchestration-engine/security/advisories/GHSA-8h52-3cfj-cmrw) |  |
 
-Last synced: 2026-11-12
+Last synced: 2026-11-13
 <!-- ADVISORIES:BITIR -->
 
 <!-- MERGED:BASLA -->
