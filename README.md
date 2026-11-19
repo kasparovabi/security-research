@@ -31,9 +31,13 @@ Advisories published by the maintainers, with reporter credit accepted. Reports 
 
 | Published | Repository | Severity | Summary | Advisory |
 |---|---|---|---|---|
+| 2026-11-15 | [polterguy/magic](https://github.com/polterguy/magic) | High | Sign in link emailed by send-reset-password-link is | [GHSA-5rxf-pwv4-5fm9](https://github.com/polterguy/magic/security/advisories/GHSA-5rxf-pwv4-5fm9) |
 | 2026-11-14 | [yvgude/lean-ctx](https://github.com/yvgude/lean-ctx) | High | Rule-file backups (init --agent, doctor --fix, | [GHSA-x992-2945-crwx](https://github.com/yvgude/lean-ctx/security/advisories/GHSA-x992-2945-crwx) |
 | 2026-11-13 | [yvgude/lean-ctx](https://github.com/yvgude/lean-ctx) | High | ctx_compress_memory and ctx_pack bundle still follow a | [GHSA-mq5c-rjv9-2fc3](https://github.com/yvgude/lean-ctx/security/advisories/GHSA-mq5c-rjv9-2fc3) |
 | 2026-11-11 | [yvgude/lean-ctx](https://github.com/yvgude/lean-ctx) | High | Symlinks in a cloned repository still carry ctx_package, | [GHSA-3w2f-2427-9258](https://github.com/yvgude/lean-ctx/security/advisories/GHSA-3w2f-2427-9258) |
+| 2026-11-10 | [AvaloniaUI/Avalonia](https://github.com/AvaloniaUI/Avalonia) | Low | Out-of-bounds read of process memory when reading a | [GHSA-x3fw-83fm-ggpp](https://github.com/AvaloniaUI/Avalonia/security/advisories/GHSA-x3fw-83fm-ggpp) |
+| 2026-11-05 | [pbatard/rufus](https://github.com/pbatard/rufus) | Medium | Heap buffer overflow in GetSbatEntries() when the | [GHSA-hcpc-vq8c-923h](https://github.com/pbatard/rufus/security/advisories/GHSA-hcpc-vq8c-923h) |
+| 2026-11-05 | [pbatard/rufus](https://github.com/pbatard/rufus) | Medium | Heap buffer overflow in UpdateMD5Sum() from a short | [GHSA-877g-r8h5-fq8p](https://github.com/pbatard/rufus/security/advisories/GHSA-877g-r8h5-fq8p) |
 | 2026-11-05 | [yvgude/lean-ctx](https://github.com/yvgude/lean-ctx) | Medium | ctx_package save and ctx_pack export write outside the | [GHSA-483j-9vcj-2gxx](https://github.com/yvgude/lean-ctx/security/advisories/GHSA-483j-9vcj-2gxx) |
 | 2026-11-05 | [AmrDab/clawdcursor](https://github.com/AmrDab/clawdcursor) | Medium | Safety gate bypassed by the agent's own tool name | [GHSA-35pc-g74h-p476](https://github.com/AmrDab/clawdcursor/security/advisories/GHSA-35pc-g74h-p476) |
 | 2026-10-29 | [yvgude/lean-ctx](https://github.com/yvgude/lean-ctx) | Medium | Proxy accepts any provider key header on | [GHSA-53h5-q4m8-vg3x](https://github.com/yvgude/lean-ctx/security/advisories/GHSA-53h5-q4m8-vg3x) |
