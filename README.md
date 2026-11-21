@@ -51,7 +51,7 @@ Advisories published by the maintainers, with reporter credit accepted. Reports 
 | 2026-09-20 | [SylphxAI/anymd](https://github.com/SylphxAI/anymd) | Medium | Documented --allow-dir / MCP_PDF_ALLOWED_DIRS filesystem allowlist is not implemented in the pure-Rust server | [GHSA-qr3f-g5wf-225w](https://github.com/SylphxAI/anymd/security/advisories/GHSA-qr3f-g5wf-225w) |  |
 | 2026-09-17 | [Kronova-Intelligent-Systems/asset-intel-orchestration-engine](https://github.com/Kronova-Intelligent-Systems/asset-intel-orchestration-engine) | High | RLS policy on public.profiles grants the anon role unrestricted read, exposing user email | [GHSA-8h52-3cfj-cmrw](https://github.com/Kronova-Intelligent-Systems/asset-intel-orchestration-engine/security/advisories/GHSA-8h52-3cfj-cmrw) |  |
 
-Last synced: 2026-11-20
+Last synced: 2026-11-21
 <!-- ADVISORIES:BITIR -->
 
 <!-- MERGED:BASLA -->
@@ -61,6 +61,7 @@ Pull requests merged by the maintainers of the projects below.
 
 | Merged | Repository | Change |
 |---|---|---|
+| 2026-11-20 | [libmapper/webmapper](https://github.com/libmapper/webmapper) | [Keep webmapper importable on Python 3.13 (cgi removed)](https://github.com/libmapper/webmapper/pull/49) |
 | 2026-11-16 | [WorldVistA/VistA](https://github.com/WorldVistA/VistA) | [Dox: drop unused cgi imports, removed in Python 3.13](https://github.com/WorldVistA/VistA/pull/303) |
 | 2026-11-15 | [cmj/twitter-tools](https://github.com/cmj/twitter-tools) | [tw2rss: read the query string without cgi, removed in Python 3.13](https://github.com/cmj/twitter-tools/pull/6) |
 | 2026-11-09 | [hashcat/hashcat](https://github.com/hashcat/hashcat) | [Read the attack's highest position under its lock in the brain server](https://github.com/hashcat/hashcat/pull/5085) |
