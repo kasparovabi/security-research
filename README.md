@@ -10,6 +10,7 @@ Contact: kasparovabi@gmail.com
 
 | Date | Vendor / Product | Severity | Title | Status |
 |---|---|---|---|---|
+| 2026-11-23 | AvaloniaUI / Avalonia | CVSS 3.1 Low | [A CF_DIB from the clipboard or a drop could make GDI read outside the buffer on Windows](2026-11-avalonia-cf-dib-clipboard-read.md) | Fixed in Avalonia.Win32 11.3.23 and 12.1.6 ([GHSA-x3fw-83fm-ggpp](https://github.com/AvaloniaUI/Avalonia/security/advisories/GHSA-x3fw-83fm-ggpp)) |
 | 2026-11-16 | polterguy / Magic | CVSS 3.1 High | [The emailed sign in link took its domain from the Origin header, so a root session token could go to an attacker's site](2026-11-magic-reset-link-origin.md) | Fixed in v24.4.23 ([GHSA-5rxf-pwv4-5fm9](https://github.com/polterguy/magic/security/advisories/GHSA-5rxf-pwv4-5fm9)) |
 | 2026-11-09 | pbatard / Rufus | CVSS 3.1 Medium | [Two heap writes from line handling, in md5sum.txt from an ISO and in the downloaded sbat_level.txt](2026-11-rufus-md5sum-and-sbat-heap-writes.md) | Fixed for 4.16 ([GHSA-877g-r8h5-fq8p](https://github.com/pbatard/rufus/security/advisories/GHSA-877g-r8h5-fq8p), [GHSA-hcpc-vq8c-923h](https://github.com/pbatard/rufus/security/advisories/GHSA-hcpc-vq8c-923h)) |
 | 2026-10-31 | yvgude / lean-ctx | CVSS 3.1 High | [Project-local provider configs skipped Workspace Trust and could send environment secrets to a repository-chosen URL](2026-10-lean-ctx-project-providers-trust.md) | Fixed in 3.12.0 ([GHSA-rrww-7924-w72f](https://github.com/yvgude/lean-ctx/security/advisories/GHSA-rrww-7924-w72f)) |
